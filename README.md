@@ -20,6 +20,10 @@ Attacks from VM:
 Ubuntu 12.05
 Metasploit - community edition
 ```
+### Snort configs
+The following configs and rules where used in Snort for this exercise.
+[Snort configs](/snortconfigs)
+
 ## Four attacks Snort can identify
 
 ### IIS - FTP
@@ -78,8 +82,9 @@ different attacks but warning itself does not indicate any exploit. So it easily
 ```
 
 ## Summary
-The question in this project was whether it would be easier to fix application than detect attacks and my honest answer is **yes**, it is much easier to fix application at least when vulnerabilities have been detected and identified.  Of course application can always have zero day vulnerabilities which needs to be tackled by proper software development processes including threat modeling etc. After this exercise I really feel that detection of different vulnerabilities cannot be perfect and set rules/fingerprints comes so complex that IDS system does not feel reliable anymore. It is really hard to be sure that everything is ok and correct action are performed. I used only community rules and pro rules most probably would have better detection rate. Still in my exercise I was forced to set one new rule and I got only warnings for certain attacks, not proper alarms. Still it would be good to have IDS with set of appropriate rules in place. CVE lists shall be followed and rules shall be updated. Still also applications shall be fixed and not only trust IDS system and feel everything is ok.
+The question in this project was whether it would be easier to fix application than detect attacks and my honest answer is **yes**, it is much easier to fix application at least when vulnerabilities have been detected and identified.  Of course application can always have zero day vulnerabilities which needs to be tackled by proper software development processes including threat modeling etc. After this exercise I really feel that detection of different vulnerabilities cannot be perfect and set rules/fingerprints comes so complex that IDS system does not feel reliable anymore. It is really hard to be sure that everything is ok and correct actions are performed. I used only community rules and pro rules most probably would have better detection rate. Still in my exercise I was forced to set one new rule and I got only warnings for certain attacks, not proper alarms. Still it would be good to have IDS with set of appropriate rules in place. CVE lists shall be followed and rules shall be updated. But also applications **shall be fixed** and not only trust IDS system and feel everything is ok.
 
 Below status screen of my metasploit GUI after these attacks + other exploration :smile:
+
 ![metasploit status](/metasploit_status.png)
 
